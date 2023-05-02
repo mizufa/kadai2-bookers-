@@ -1,0 +1,22 @@
+<!--詳細画面-->
+<div class="show">
+<p>
+  <strong>title:</strong>
+  <%= @book.title %>
+</p>
+
+<p>
+  <strong>title:</strong>
+  <%= @book.body %>
+</p>
+
+<%= link_to "edit", edit_book_path %>
+<%= link_to "back", books_path %>
+
+<!--サクセスメッセージ-->
+<% if flash[:notice] %>
+  <p id="notice">
+    <%= flash[:notice] %>
+  </p>
+  <% end %>
+</div>
